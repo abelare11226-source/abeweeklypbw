@@ -3,15 +3,15 @@
 @section('content')
     <div class="container mt-4">
         <div class="text-center mb-4">
-            <h1>{{ $singlenews['judul'] }}</h1>
-            <h5 class="text-muted">Penulis: {{ $singlenews['penulis'] }}</h5>
-            <small class="text-muted">{{ \Carbon\Carbon::parse($singlenews['tanggal'])->format('d M Y') }}</small>
+            <h1>{{ $singlenews->judul }}</h1>
+            <h5 class="text-muted">Penulis: {{ $singlenews->penulis }}</h5>
+            <small class="text-muted">{{ $singlenews->created_at?->format('d M Y') }}</small>
         </div>
 
         <div class="text-justify">
-            <p>{{ $singlenews['isi'] }}</p>
+            <p>{{ $singlenews->konten }}</p>
         </div>
 
-        <a href="/berita">Kembali</a>
+        <a href="{{ route('berita.index') }}">Kembali</a>
     </div>
 @endsection
