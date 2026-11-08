@@ -10,7 +10,7 @@
             <ul class="list-unstyled mb-0">
                 <li>Email: info@abeweeklypbw.com</li>
                 <li>Instagram: @abeweeklypbw</li>
-                <li>Alamat: Bandung, Indonesia</li>
+                <li>Alamat: Semarang, Indonesia</li>
             </ul>
         </div>
     </div>
