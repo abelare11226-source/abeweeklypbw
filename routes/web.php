@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BeritaController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\mahasiswaController;
 
 Route::get('/', function () {
     return view('home', [
@@ -26,3 +27,5 @@ Route::get('/contact', function () {
 
 Route::get('/berita', [BeritaController::class, 'tampilberita'])->name('berita.index');
 Route::get('/berita/{slug}', [BeritaController::class, 'tampilberitatunggal'])->name('berita.show');
+
+Route::get('/datamahasiswa', [mahasiswaController::class, 'index'])->name('datamhs');
